@@ -1,0 +1,20 @@
+name: srsi
+
+channels:
+  - conda-forge   # Highly recommended for many data science packages, including Prophet
+  - defaults
+
+dependencies:
+  - python=3.9
+  - numpy           # Numerical computing
+  - pandas          # Data manipulation and analysis
+  - seaborn         # Statistical data visualization
+  - matplotlib      # Plotting and visualization
+  - scikit-learn    # Machine learning (often 'scikit-learn' or 'sklearn' in different contexts)
+  - prophet         # Time series forecasting (note: officially 'prophet' now, not 'fbprophet')
+  - jupyterlab
+  - xarray
+  - pip
+  - pip:
+    - mlflow==2.10.1
+    - great-expectations
